@@ -1,6 +1,6 @@
 # Findings
 
-Data: NPCI monthly UPI totals, Aug 2016 to Sep 2026 (122 months). FY17 (8 months) and FY27 (Apr–Sep 2026) are partial, so growth and CAGR only use complete years FY18–FY26.
+Data: NPCI monthly UPI totals, Aug 2016 to Sep 2026 (122 months). FY17 (8 months) and FY27 (Apr–Sep 2026) are partial, so growth and CAGR only use complete years FY18–FY26. App and P2P/P2M data: Sep 2024 to Aug 2026 (24 months).
 
 ## Day 3: Growth, ticket size, seasonality
 
@@ -35,7 +35,29 @@ I used volume per day so 28/30/31-day months compare fairly, averaged from 2021 
 - May is the weakest (+0.4%), likely pulled down by the May 2021 lockdown. January (+1.7%) is a post-December lull.
 - Oct–Dec use 5 years of data and the rest use 6, since my data ends in Sep 2026.
 
-### Takeaways so far
+## Day 4: Apps, concentration, P2P vs P2M
+
+### B1. Market share, Aug 2026 (Q4)
+- Top 2 hold 77.9%: PhonePe 45.6%, Google Pay 32.3%. Paytm 8.0%, Navi 4.4%.
+- CRED has the highest ticket (₹3,988 vs ~₹1,275 for PhonePe/GPay), likely credit-card bill payments.
+
+### B2. Concentration (Q4)
+- Top-2 share fell from 85.4% to 77.9% in 24 months; HHI 3,757 → 3,215. Still highly concentrated (above 2,500).
+- Most of the drop is Google Pay (-5.1 pp). PhonePe fell only 2.4 pp.
+
+### B3. Challengers (Q5)
+- Navi: +113.9% YoY, +1.88 pp share, now #4. Biggest gainer.
+- Paytm recovering (+1.00 pp). BHIM (rank 9 → 6) and WhatsApp (11 → 8) also climbed.
+- CRED lost the most ground (rank 6 → 10). Tiny apps show huge % growth but under 0.1% share, so I ignored them.
+
+### B4. P2P vs P2M (Q7)
+- P2M is 63.3% of volume but only 30.0% of value, matching PIB's ~63%.
+- P2M ticket ₹577 vs P2P ₹2,319 (4x). P2P ticket fell 12% in 24 months; P2M stayed flat.
+
+## Takeaways so far
 1. UPI grew 264x in 8 years and now adds about 55 bn transactions a year.
 2. % growth has settled in the low 20s, which is expected at this scale.
 3. Payments are getting smaller (₹1,838 → ₹1,301), so growth is coming from everyday spending, but that drop is slowing down.
+4. The PhonePe–Google Pay duopoly is loosening (top-2: 85.4% → 77.9%), mostly at Google Pay's cost.
+5. Navi is the standout challenger; CRED is losing rank.
+6. Two-thirds of UPI payments go to shops, but they carry under a third of the money.

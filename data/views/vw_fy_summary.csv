@@ -1,0 +1,12 @@
+fiscal_year,months,fy_status,volume_bn,value_lakh_cr,avg_ticket_rs
+FY17,8,Partial,0.018,0.07,3912
+FY18,12,Complete,0.915,1.10,1200
+FY19,12,Complete,5.392,8.77,1627
+FY20,12,Complete,12.519,21.32,1703
+FY21,12,Complete,22.331,41.04,1838
+FY22,12,Complete,45.968,84.18,1831
+FY23,12,Complete,83.751,139.21,1662
+FY24,12,Complete,131.130,199.95,1525
+FY25,12,Complete,185.866,260.57,1402
+FY26,12,Complete,241.617,314.23,1301
+FY27,6,Partial,140.500,176.93,1259
