@@ -121,7 +121,7 @@ GROUP BY MONTH(month_date), LEFT(MONTHNAME(month_date), 3);
 
 SHOW FULL TABLES FROM upi_analysis WHERE Table_type = 'VIEW';
 
--- Savings csv:
+-- Export each view to data/views/<view>.csv (in Workbench set "Don't Limit" first; vw_app_share has 2,052 rows)
 
 SELECT * FROM vw_monthly_trend ORDER BY month_date;
 

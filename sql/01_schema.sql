@@ -1,5 +1,3 @@
-SELECT version();
-
 SET PERSIST local_infile = 1;
 
 CREATE DATABASE IF NOT EXISTS upi_analysis;
@@ -34,7 +32,8 @@ CREATE TABLE upi_apps (
     value_cr    DECIMAL(14,2) NOT NULL,
     UNIQUE KEY uq_app_month (month_date, app_name),
     FOREIGN KEY (month_date) REFERENCES upi_monthly(month_date),
-    CHECK (volume_mn > 0)
+    CHECK (volume_mn > 0),
+    CHECK (value_cr > 0)
 );
 
 -- 3. Two rows per month: P2P and P2M
@@ -44,7 +43,9 @@ CREATE TABLE upi_p2p_p2m (
     volume_mn   DECIMAL(12,2)     NOT NULL,
     value_cr    DECIMAL(14,2)     NOT NULL,
     PRIMARY KEY (month_date, txn_type),
-    FOREIGN KEY (month_date) REFERENCES upi_monthly(month_date)
+    FOREIGN KEY (month_date) REFERENCES upi_monthly(month_date),
+    CHECK (volume_mn > 0),
+    CHECK (value_cr > 0)
 );
 
 

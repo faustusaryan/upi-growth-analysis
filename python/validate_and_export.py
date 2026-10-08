@@ -86,7 +86,7 @@ check = app_sum.to_frame("apps_total").join(monthly.set_index("month")["volume_m
 check["coverage_pct"] = 100 * check["apps_total"] / check["volume_mn"]
 if (check["coverage_pct"] > 102).any():
     errors.append("[apps] app total > UPI total in some month (check units)")
-print("\nTop-15 apps' share of total UPI volume per month (expect roughly 85-100%):")
+print("\nListed apps' share of total UPI volume per month (expect roughly 85-100%):")
 print(check["coverage_pct"].round(1).to_string())
 
 # ---------- 3. P2P vs P2M ----------
@@ -94,6 +94,8 @@ p2p = load_sheet("p2p_p2m", ["month", "txn_type", "volume_mn", "value_cr"])
 p2p["txn_type"] = p2p["txn_type"].fillna("").astype(str).str.strip().str.upper()
 if not p2p["txn_type"].isin(["P2P", "P2M"]).all():
     errors.append("[p2p_p2m] txn_type must be only P2P or P2M")
+if p2p.duplicated(["month", "txn_type"]).any():
+    errors.append("[p2p_p2m] same txn_type appears twice in one month")
 if (p2p.groupby("month")["txn_type"].nunique() != 2).any():
     errors.append("[p2p_p2m] some months do not have both P2P and P2M")
 

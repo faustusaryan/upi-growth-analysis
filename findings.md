@@ -20,7 +20,7 @@ Terms used:
 ### A1. Yearly growth (Q1)
 - UPI went from 0.9 bn transactions (₹1.10 lakh cr) in FY18 to 241.6 bn (₹314.23 lakh cr) in FY26.
 - YoY volume growth has dropped every year since FY22: 105.8% → 82.2% → 56.6% → 41.7% → 30.0%. The FY21 dip (78.4%) was probably COVID, and it bounced back in FY22.
-- In absolute terms it's holding up. FY26 added 55.7 bn transactions, about the same as FY25 (54.7 bn). So UPI adds roughly 55 bn a year now, and the % falls because the base keeps getting bigger.
+- In absolute terms it's holding up. FY26 added 55.8 bn transactions, about the same as FY25 (54.7 bn). So UPI adds roughly 55 bn a year now, and the % falls because the base keeps getting bigger.
 - Value growth is lower than volume growth (20.6% vs 30.0% in FY26) because ticket sizes are falling.
 
 ### A2. CAGR (Q1)
@@ -82,7 +82,7 @@ Format: finding (heading) → evidence → so what → recommendation.
 - **Recommendation:** Banks and payment apps should plan capacity and uptime for UPI adding ~55 bn transactions every year.
 
 ### I2. % growth is slowing, but absolute growth is steady (Q2)
-- **Evidence:** YoY volume growth cooled from 33–39% (Nov 2024 to May 2025) to 21.5–24.9% since Mar 2026 (22.6% in Sep 2026). FY26 still added 55.7 bn transactions, about the same as FY25 (54.7 bn).
+- **Evidence:** YoY volume growth cooled from 33–39% (Nov 2024 to May 2025) to 21.5–24.9% since Mar 2026 (22.6% in Sep 2026). FY26 still added 55.8 bn transactions, about the same as FY25 (54.7 bn).
 - **So what:** The falling % is a base effect, not weak demand.
 - **Recommendation:** Apps should stop expecting 2x growth and focus on engagement and new use cases (for example credit on UPI, recurring payments).
 
@@ -119,7 +119,7 @@ Format: finding (heading) → evidence → so what → recommendation.
 **Data (all from NPCI):**
 - NPCI UPI statistics: https://www.npci.org.in/product/ecosystem-statistics/upi
   - Monthly totals: Aug 2016 to Sep 2026.
-  - App-wise and P2P/P2M: 24 monthly files (Sep 2024 to Aug 2026), downloaded Oct 2026 and combined into data/raw/upi_raw.xlsx.
+  - App-wise and P2P/P2M: 24 monthly files (Sep 2024 to Aug 2026), downloaded Oct 2026 and merged with Power Query into data/raw/upi_raw.xlsx.
 
 **Used only to cross-check my numbers (no data taken from these):**
 - PIB, "UPI completes 10 glorious years" (P2M ~63% of volume, P2P ~71% of value): https://www.pib.gov.in/PressReleasePage.aspx?PRID=2257087

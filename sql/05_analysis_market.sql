@@ -68,6 +68,8 @@ JOIN latest AS l
 JOIN s AS prev
   ON prev.app_name   = cur.app_name
  AND prev.month_date = DATE_SUB(l.d, INTERVAL 12 MONTH)
+-- Only apps with 50 mn+ transactions: tiny apps show huge % growth on almost no volume.
+-- Ranks 1-2 (PhonePe, Google Pay) are the incumbents, not challengers.
 WHERE cur.volume_mn >= 50
   AND cur.vol_rank > 2
 ORDER BY share_change_pp DESC;

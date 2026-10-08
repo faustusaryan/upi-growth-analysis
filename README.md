@@ -14,7 +14,7 @@ I analysed **10 years of official NPCI data** (122 months, 2,052 app-level recor
 
 ## Headline findings
 
-1. **Growth is cooling in %, not in size.** YoY volume growth fell from 33–39% (Nov 2024 – May 2025) to **22.6%** (Sep 2026), yet UPI still adds **~55 bn transactions a year** (FY25: 54.7 bn, FY26: 55.7 bn). Since FY18, volume is up **264×** (CAGR 100.8%).
+1. **Growth is cooling in %, not in size.** YoY volume growth fell from 33–39% (Nov 2024 – May 2025) to **22.6%** (Sep 2026), yet UPI still adds **~55 bn transactions a year** (FY25: 54.7 bn, FY26: 55.8 bn). Since FY18, volume is up **264×** (CAGR 100.8%).
 2. **Payments are getting smaller.** The average ticket fell from **₹1,838 to ₹1,301** (FY21 → FY26) while volume grew ~11×. Merchant payments are **63%** of transactions but only **30%** of value.
 3. **The duopoly is loosening, slowly.** PhonePe + Google Pay hold **77.9%** (Aug 2026), down from 85.4% in Sep 2024; HHI fell from 3,757 to 3,215, still highly concentrated. **Navi** gained the most share of any app: +1.88 pp in a year (2.5% → 4.4%).
 

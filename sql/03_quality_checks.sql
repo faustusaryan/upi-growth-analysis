@@ -49,4 +49,5 @@ GROUP BY fiscal_year
 ORDER BY fiscal_year;
 -- Every full FY should show 12 months.
 
+-- 7. Cross-check with news: Jul 2026 should be ~23,660 mn (23.66 bn, Business Standard)
 SELECT volume_mn FROM upi_monthly WHERE month_date = '2026-07-01';
